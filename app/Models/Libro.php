@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Libro extends Model
 {
     protected $table = "libro";
-    protected $fillable = array('titulo', 'genero', 'activo', 'idEditorial');
+    protected $fillable = array('titulo', 'genero', 'idEditorial');
     public $timestamps = false;
   
     public function autores() {	

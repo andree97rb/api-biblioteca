@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 26-07-2021 a las 06:37:32
+-- Tiempo de generación: 23-08-2021 a las 01:01:45
 -- Versión del servidor: 10.4.18-MariaDB
 -- Versión de PHP: 8.0.3
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `BDBiblioteca`
+-- Base de datos: `bibliotecaa`
 --
 
 -- --------------------------------------------------------
@@ -69,7 +69,6 @@ CREATE TABLE `libro` (
   `id` int(11) NOT NULL,
   `titulo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `genero` enum('Aventura','Policiaca','Ciencia Ficcion','Terror') COLLATE utf8mb4_unicode_ci NOT NULL,
-  `activo` bit(1) NOT NULL,
   `idEditorial` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 

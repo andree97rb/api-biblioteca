@@ -20,7 +20,6 @@ class LibroController extends Controller
             "libro.id",
             "libro.titulo",
             "libro.genero",
-            "libro.activo",
             "libro.idEditorial",            
             "editorial.nombre as nombreEditorial"
         )
@@ -111,7 +110,6 @@ class LibroController extends Controller
 
         $titulo = $request->titulo;
         $genero = $request->genero;
-        $activo = $request->activo;
         $idEditorial = $request->idEditorial;
 
         if (!$request->titulo || !$request->genero || $request->idEditorial == 0)
@@ -121,7 +119,6 @@ class LibroController extends Controller
 
         $libro->titulo = $titulo;
         $libro->genero = $genero;
-        $libro->activo = $activo;
         $libro->idEditorial = $idEditorial;
         $libro->save();
         
